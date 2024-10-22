@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --white: #ffffff;
+  --red-hat: "Red Hat Display", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  padding: 50px 0;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: var(--pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--red-hat);
+}
+
+main {
+  width: 400px;
+  max-width: 90%;
+  background-color: var(--white);
+  border-radius: 16px;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+
+.content {
+  padding: 40px;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 30px;
+  font-weight: 900;
+  opacity: 0.9;
+}
+
+.hero-text p {
+  color: var(--desaturated-blue);
+  margin: 16px 0;
+  font-weight: 500;
+}
+
+.plan {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: var(--very-pale-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.plan a {
+  color: var(--bright-blue);
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.5s ease-in;
+}
+
+.plan a:hover {
+  opacity: 0.7;
+}
+
+.price {
+  display: flex;
+  gap: 16px;
+}
+
+.price h3 {
+  font-size: 18px;
+  font-weight: 900;
+  opacity: 0.9;
+}
+
+.price p {
+  color: var(--desaturated-blue);
+}
+
+.btn {
+  margin-top: 24px;
+}
+
+.btn button {
+  font-size: var(--red-hat);
+  width: 100%;
+  border: none;
+  padding: 14px 8px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn button:first-child {
+  background-color: var(--bright-blue);
+  color: var(--white);
+  box-shadow: 0px 4px 30px -4px hsl(245, 75%, 52%, 0.5);
+  transition: 0.5s ease-in-out;
+}
+
+.btn button:first-child:hover {
+  opacity: 0.7;
+}
+
+.btn button:last-child {
+  background-color: transparent;
+  color: var(--desaturated-blue);
+  margin-top: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.btn button:last-child:hover {
+  color: #000;
+}
+
+@media screen and (max-width: 425px) {
+  .hero-text h1 {
+    font-size: 24px;
+  }
+  .content {
+    padding: 28px;
+  }
+
+  .plan{
+    padding: 14px;
+  }
+
+  .price h3{
+    font-size: 15px;
+  }
+  .price p{
+    font-size: 14px;
+  }
+  .price img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero-text p{
+    font-size: 14px;
+  }
+}
