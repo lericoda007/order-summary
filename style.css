@@ -69,7 +69,7 @@ main {
 }
 
 .plan a {
-  color: var(--bright-blue);
+  color: green;
   font-weight: 700;
   font-size: 14px;
   transition: 0.5s ease-in;
